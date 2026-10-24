@@ -83,7 +83,7 @@ python .github\skills\mslearn-korean-localization\scripts\validate_translation.p
 
 | 항목 | 값 |
 |---|---|
-| 저장소 | `hahaysh/mslearn-ai-agents-kr` |
+| 저장소 | `koreamtt/mslearn-ai-agents-kr` |
 | 기준 커밋 | `7eafc3c339d31a8fd125af71ee7fd2465c083be8` |
 | 마지막 검토일 | 2026-09-27 |
 
@@ -155,17 +155,20 @@ python .github\skills\mslearn-korean-localization\scripts\validate_translation.p
 https://<owner>.github.io/<repository>/Instructions-kr/Exercises/<lab>.html
 ```
 
-게시 완료: 이 저장소의 한국어 실습은 다음 사이트에 게시되어 있습니다.
+이 조직 저장소의 한국어 실습 게시 주소는 다음과 같습니다.
 
-- 사이트 홈: <https://hahaysh.github.io/mslearn-ai-agents-kr/>
-- 실습(Exercises) 예: <https://hahaysh.github.io/mslearn-ai-agents-kr/Instructions-kr/Exercises/01-build-agent-portal-and-vscode.html>
-- 워크숍(Consolidated) 예: <https://hahaysh.github.io/mslearn-ai-agents-kr/Instructions-kr/Consolidated/A1-create-and-ground-an-agent.html>
+- 사이트 홈: <https://koreamtt.github.io/mslearn-ai-agents-kr/>
+- 실습(Exercises) 예: <https://koreamtt.github.io/mslearn-ai-agents-kr/Instructions-kr/Exercises/01-build-agent-portal-and-vscode.html>
+- 워크숍(Consolidated) 예: <https://koreamtt.github.io/mslearn-ai-agents-kr/Instructions-kr/Consolidated/A1-create-and-ground-an-agent.html>
 
 게시 구성:
 
-- GitHub Pages 원본: `main` 브랜치 루트(`/`).
-- 루트 `index.md`의 실습 목록 쿼리를 `/Instructions-kr/Exercises`로 지정하여 홈페이지에 한국어 실습이 표시됩니다.
-- 마지막 확인: 홈페이지 및 대표 실습·워크숍 페이지, 미디어 이미지 모두 HTTP 200 응답을 확인했습니다(2026-09-27).
+- 기존 `MicrosoftLearning/Jekyll-Theme`를 유지하며 GitHub Pages 원본은 `main` 브랜치 루트(`/`)입니다.
+- `_config.yml`의 `url`은 `https://koreamtt.github.io`, `baseurl`은 `/mslearn-ai-agents-kr`로 지정합니다.
+- 루트 `index.md`는 `/Instructions-kr/Exercises/`의 개별 실습 10개와 `/Instructions-kr/Consolidated/`의 워크숍 개요 4개를 표시합니다.
+- 홈페이지 링크는 Jekyll의 `relative_url` 필터를 사용하여 저장소 경로를 포함합니다.
+- 이 README는 유지관리 문서이며 사이트 빌드에서 제외합니다.
+- 조직 게시 주소 정리일: 2026-10-24. 번역 기준 커밋과 마지막 번역 검토일은 변경하지 않습니다.
 
 ## 알려진 원문 문제
 

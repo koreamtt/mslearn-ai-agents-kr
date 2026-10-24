@@ -1,7 +1,12 @@
 remote_theme: MicrosoftLearning/Jekyll-Theme
+url: https://koreamtt.github.io
+baseurl: /mslearn-ai-agents-kr
+repository: koreamtt/mslearn-ai-agents-kr
+lang: ko
 exclude:
   - readme.md
   - .github/
+  - Instructions-kr/README.md
   # Lab source code is delivered by cloning the repo, not by the site. Jekyll
   # was copying ~199 files from here into _site for no benefit, and processing
   # content it was never meant to render.
@@ -11,7 +16,7 @@ header_pages:
   - index.html
 author: Microsoft Learning
 twitter_username: mslearning
-github_username:  MicrosoftLearning
+github_username: koreamtt
 plugins:
   - jekyll-sitemap
   - jekyll-mentions
@@ -20,4 +25,4 @@ markdown: kramdown
 kramdown:
    syntax_highlighter_opts:
       disable : true
-title: Develop AI Agents in Azure
+title: Azure에서 AI 에이전트 개발
