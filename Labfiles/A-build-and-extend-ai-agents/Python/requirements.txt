@@ -4,8 +4,21 @@ azure-ai-projects==2.3.0
 # openai 3.x replaced httpx with httpx2, which breaks azure-ai-projects'
 # `import httpx`. Pinned until azure-ai-projects supports openai 3.
 openai<3
-mcp
+# agent-framework-core[all] held mcp below 2. Keep that bound now that the extra
+# is gone, so the MCP client/server code the lab teaches stays on the API it
+# was written against.
+mcp<2
 fastmcp
 uvicorn
 gradio==6.20.0
-agent-framework==1.12.1
+# The `agent-framework` meta-package installs agent-framework-core[all], and
+# those extras carry no version bounds - when agent-framework-azurefunctions
+# 1.0.0 shipped, needing a newer core than this pin, the whole install became
+# unresolvable. Install the parts this lab imports instead; these are the
+# versions 08-agent-orchestration pins.
+agent-framework-core==1.12.1
+agent-framework-foundry==1.10.3
+# The hosted agent in A6 imports the Responses hosting library, which used to
+# arrive through agent-framework-foundry-hosting in that extra. Same version
+# as hosted_agent/requirements.txt.
+azure-ai-agentserver-responses==1.0.0b9
